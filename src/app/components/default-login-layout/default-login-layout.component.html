@@ -2,11 +2,17 @@
     <section class="form-section">
         <img src="Component.svg"/>
         <h2>{{title}}</h2>
-        <button class="btn-primary">{{primaryBtnText}}</button>
-        <div>
+        <ng-content></ng-content>
+        <div class="btn-wrapper">
+            <button class="btn-primary">{{primaryBtnText}}</button>
+        <div class="divider">
+            <div></div>
             <span>or</span>
+            <div></div>
         </div>
         <button class="btn-secondary">{{secondaryBtnText}}</button>
+        </div>
+        
 
     </section>
     <section class="main-section">
